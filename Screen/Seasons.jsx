@@ -11,16 +11,16 @@ import { API_URL } from '@env';
 
 const Seasons = () => {
     const [selectedSeason, setSelectedSeason] = useState(1);
-    const [isRefreshing, setIsRefreshing] = useState(false); 
+    const [isRefreshing, setIsRefreshing] = useState(false);
 
     const dispatch = useDispatch();
     const data = useSelector(state => state.data);
     const [moviesData, setMoviesData] = useState(movies);
 
     const loadData = async () => {
-        setIsRefreshing(true); 
+        setIsRefreshing(true);
         await dispatch(fetchData(`${API_URL}`));
-        setIsRefreshing(false); 
+        setIsRefreshing(false);
         setSelectedSeason(1);
     };
 
@@ -34,8 +34,8 @@ const Seasons = () => {
 
     return (
         <ScrollView style={styles.container} refreshControl={<RefreshControl refreshing={isRefreshing} onRefresh={loadData} />}>
-            <MovieCover styles={styles}/>
-            <Chapter styles={styles} setSelectedSeason={setSelectedSeason} selectedSeason={selectedSeason} seasonData={seasonData} moviesData={moviesData}/>
+            <MovieCover styles={styles} />
+            <Chapter styles={styles} setSelectedSeason={setSelectedSeason} selectedSeason={selectedSeason} seasonData={seasonData} moviesData={moviesData} />
         </ScrollView>
     );
 };

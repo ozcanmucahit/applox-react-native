@@ -1,9 +1,8 @@
 import { createSlice } from '@reduxjs/toolkit';
-import { fetchData } from './actions'; // fetchData aksiyonunu import edin
+import { fetchData } from './actions'; 
 
 const initialState = {
     data: [],
-    // images: [], // Eğer images state'i kullanmıyorsanız bunu da kaldırabilirsiniz.
 };
 
 const dataSlice = createSlice({
@@ -11,16 +10,16 @@ const dataSlice = createSlice({
     initialState,
     reducers: {
         update: (state, action) => {
-            state.data = action.payload; // Bu kısımda güncellemeler var
+            state.data = action.payload;
         },
     },
     extraReducers: (builder) => {
         builder
             .addCase(fetchData.fulfilled, (state, action) => {
-                state.data = action.payload; // API'den gelen veriyi state'e kaydet
+                state.data = action.payload;
             })
             .addCase(fetchData.rejected, (state, action) => {
-                console.error('Veri yüklenirken hata oluştu:', action.error); // Hata mesajı
+                console.error('Bir hata oluştu! :', action.error); 
             });
     },
 });

@@ -3,9 +3,7 @@ import { Image, View, Text, TouchableOpacity, ScrollView, RefreshControl } from 
 import { LikeSvg, DislikeSvg, AddSvg, ShareSvg, DownloadSvg, MoreSvg } from '../../Libs/Svg';
 
 
-
-
-const MovieCover = ({styles}) => {
+const MovieCover = ({ styles }) => {
     return (
         <>
             <View style={styles.coverContainer}>
