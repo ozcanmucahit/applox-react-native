@@ -1,59 +1,92 @@
-Task mülakat
+ 
+# Applox Mülakat & REACT-NATİVE
 
-Bu proje react native ile geliştirilmiştir.
+Merhaba, bana verilen görev kapsamında yer alan Figma tasarımında bulunan Exxen layout'unu hem 'React Native' hem de 'Flutter' ile geliştirdim. Her iki platformda da kullanıcı deneyimini ön planda tutarak estetik ve işlevselliği bir araya getirdim. Projenin gereksinimlerine uygun olarak tasarımı başarılı bir şekilde hayata geçirdim.
+
+Not:Ben genelde rn'de tailwind css ağırlıklı çalışırım. Ancak releaslerde cli ve expo larda sanırım 1-2 ay önce yaygın bir upgrade edilmiş dolayısı ile base css-in-js ile yazdım ki bu yaygın bir kural. Ancak bu kuralı tailwind ile yıkmak bana göre daha ideal çünkü breakpoint yönetirken metriklere çok gerek kalmıyor. 
 
 
 
 
-## Versiyon v1
+## FAKE API İÇİN
+#### Link: https://api.npoint.io/136b7339011c75796494
+#### Tüm öğeleri getir
 
-[mucahit](https://www.linkedin.com/in/mucahitozcantr/) trafından geliştirildi.
+```http
+  GET /
+````
 
-[![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
-[![GPLv3 License](https://img.shields.io/badge/License-GPL%20v3-yellow.svg)](https://opensource.org/licenses/)
-[![AGPL License](https://img.shields.io/badge/license-AGPL-blue.svg)](http://www.gnu.org/licenses/agpl-3.0)
+Sadece get isteği ile json verisine ulaşabilirsiniz.
+Unutmayın bu bir asenkron işlem.
+
+
 
   
 ## Yükleme 
 
 benim-projem'i npm kullanarak yükleyin
 
-```bash
+```bash 
   git clone repolink
-  cd proje 
+  cd my-project
   npm install 
-  expo start
+  npx expo start 
+  sonra qr code yu okutun live olarak bakabilirsiniz
+  veya apk ya bakabilirsiniz.
 ```
     
+## Yol haritası
+
+- Components Oluşturma
+
+- Fake api için npoint kullanmak
+
+- State man için redux kullanmak
+
+- iconlar için svg kullanmak
+
+
+  
 ## Kullanılan Teknolojiler
 
-**client:** React native, TailwindCSS, 
+**İstemci:** React Native, Redux, Redux thunk
 
-**backend:** fake data
+**Sunucu:** Expo  for android - apk
+
+**Platform live** Expo Go'yu İndirin: Android için Google Play Store'dan veya iOS için App Store'dan Expo Go uygulamasını indirin.
+
+Projeyi Başlatın:
+
+Terminalinizi açın ve projenizin kök dizinine gidin.
+Aşağıdaki komutu çalıştırarak projenizi başlatın:
+bash
+Kodu kopyala
+expo start
+QR Kodunu Okuyun:
+
+Terminalde açılan Expo geliştirme panelinde bir QR kodu göreceksiniz.
+Expo Go uygulamasını açın ve ana ekranından QR kodu tarama seçeneğine tıklayın.
+Kamera ile QR kodunu tarayın.
+Canlı Uygulamayı Görüntüleyin:
+
+QR kodunu taradıktan sonra, projeniz Expo Go uygulamasında yüklenmeye başlayacak.
+Uygulamanız, terminalde “bundled” (paketlenmiş) hale geldiğinde, kullanıcılar uygulamayı canlı olarak görebilir ve test edebilir.
 
   
 ## Ekran Görüntüleri
-onboarding screen
-![Uygulama Ekran Görüntüsü](https://img.imgyukle.com/2024/04/13/yZo8ko.png)
 
-login screen
-![Uygulama Ekran Görüntüsü](https://img.imgyukle.com/2024/04/13/yZot1H.png)
+![App layout a screen ](https://i.hizliresim.com/1gi8h01.png)
 
 
-product screen
-![Uygulama Ekran Görüntüsü](https://img.imgyukle.com/2024/04/13/yZoZu1.png)
-
-details screen
-![Uygulama Ekran Görüntüsü](https://img.imgyukle.com/2024/04/13/yZo4Mf.png)
+![App layout  header a screen ](https://i.hizliresim.com/7avgkzq.png)
 
 
-
-profile screen
-![Uygulama Ekran Görüntüsü](https://img.imgyukle.com/2024/04/13/yZobpI.png)
+![App layout chapter 1 a screen ](https://i.hizliresim.com/fsatibg.png)
 
 
-checkout screen
-![Uygulama Ekran Görüntüsü](https://img.imgyukle.com/2024/04/13/yZo9JG.png)
+![App layout chapter 1 a screen ](https://i.hizliresim.com/2b07zmz.png)
+
+
 
 
 
@@ -61,5 +94,8 @@ checkout screen
 
 
   
+## TEŞEKKÜRLER
+
+
 
   
